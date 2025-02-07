@@ -74,7 +74,7 @@ public class MainPageTests extends TestBase {
     }
 
     @Test
-    @DisplayName("")
+    @DisplayName("Проверяем что корректно отображаются слайды при перелистывании")
     void shouldShowCorrectSlideTextAfterNextClickTest() {
 
         step("Открываем главную страницу", () -> mainPage.openPage());
