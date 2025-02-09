@@ -63,7 +63,7 @@ public class MainPageTests extends TestBase {
     }
 
     @Test
-    @DisplayName("")
+    @DisplayName("Проверяем что в скачанном PDF-файле есть нужные значения")
     void verifyPDFFileOnPageTest() throws Exception {
 
         step("Открываем главную страницу", () -> mainPage.openPage());
