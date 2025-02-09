@@ -15,7 +15,7 @@ public class MainPageTests extends TestBase {
     MainPage mainPage = new MainPage();
 
     @Test
-    @DisplayName("Проверяем что вводе поискового значения в превью будет нужный результат")
+    @DisplayName("Проверяем что при вводе поискового значения в превью будет нужный результат")
     void SearchPreviewDisplaysExpectedValueTest() {
 
         step("Открываем главную страницу", () -> mainPage.openPage());
