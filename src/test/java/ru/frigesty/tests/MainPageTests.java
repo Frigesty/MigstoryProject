@@ -19,7 +19,10 @@ public class MainPageTests extends TestBase {
     void SearchPreviewDisplaysExpectedValueTest() {
 
         step("Открываем главную страницу", () -> mainPage.openPage());
-        step("Вводим значение 'Пила' в поиск", () -> mainPage.setValueInSearchField("Пила"));
+        step("Вводим значение 'Пила' в поиск", () -> {
+            mainPage.setValueInSearchField("Пила")
+                    .sleepOneSecond();
+        });
         step("Проверяем что в превью к поиску есть искомый результат", () -> mainPage
                 .searchPreviewCheck("Пила дисковая ИНТЕРСКОЛ"));
     }
