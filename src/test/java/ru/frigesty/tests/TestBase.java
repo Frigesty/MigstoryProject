@@ -20,8 +20,8 @@ public class TestBase {
         String getWdHost = format("https://user1:1234@%s/wd/hub",
                 System.getProperty("wd", "selenoid.autotests.cloud"));
         DesiredCapabilities capabilities = new DesiredCapabilities();
-        Configuration.browser = System.getProperty("browser");
-        Configuration.browserVersion = System.getProperty("browserVersion");
+        Configuration.browser = System.getProperty("browser", "chrome");
+        Configuration.browserVersion = System.getProperty("browserVersion", "126");
         Configuration.browserSize = System.getProperty("browserSize", "1920x1080");
         Configuration.pageLoadStrategy = System.getProperty("loadStrategy", "eager");
         Configuration.baseUrl = System.getProperty("baseUrl", "https://migstroy.spb.ru");
@@ -43,10 +43,11 @@ public class TestBase {
     void addAttachments() {
         Attach.screenshotAs("Last screenshot");
         Attach.addVideo();
-        if (!System.getProperty("browser").equalsIgnoreCase("firefox")) {
-            Attach.pageSource();
+        if (!Configuration.browser.equalsIgnoreCase("firefox")) {
             Attach.browserConsoleLogs();
         }
+        Attach.pageSource();
+
     }
 
     @AfterAll
