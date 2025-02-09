@@ -89,13 +89,13 @@ vkusvill
 ```
 ___
 <a id="allure"></a>
-## <img alt="Allure" height="25" src="images/logo/Allure.svg" width="25"/></a> <a name="Allure"></a>Allure [отчет](https://jenkins.autotests.cloud/job/HW14-VkusVill/19/allure/)</a>
+## <img alt="Allure" height="25" src="images/logo/Allure.svg" width="25"/></a> <a name="Allure"></a>Allure [отчет](https://jenkins.autotests.cloud/job/FrigestyMigstroyProject/7/allure/)</a>
 ___
 
 ### *Основная страница отчёта*
 
 <p align="center">  
-<img title="Allure Overview Dashboard" src="images/screen/vkusvill_jenkins.png" width="850">  
+<img title="Allure Overview Dashboard" src="images/screen/allureReport.png" width="850">  
 </p>  
 
 ### *Тест-кейсы*
