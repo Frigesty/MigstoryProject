@@ -101,7 +101,7 @@ ___
 ### *Тест-кейсы*
 
 <p align="center">  
-<img title="Allure Tests" src="files/images/screen/vkusvill_jenkins_tests.png" width="850">  
+<img title="Allure Tests" src="files/images/screen/TestCase.png" width="850">  
 </p>
 
 ### *Графики*
