@@ -107,7 +107,7 @@ ___
 ### *Графики*
 
   <p align="center">  
-<img title="Allure Graphics" src="files/images/screen/vkusvill_allure_graphs.png" width="850">
+<img title="Allure Graphics" src="files/images/screen/graph.png" width="850">
 
 </p>
 
