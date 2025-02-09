@@ -52,7 +52,7 @@ ____
 
 ____
 <a id="jenkins"></a>
-## <img alt="Jenkins" height="25" src="images/logo/Jenkins.svg" width="25"/></a><a name="Сборка"></a>Сборка в [Jenkins](https://jenkins.autotests.cloud/job/HW14-VkusVill/)</a>
+## <img alt="Jenkins" height="25" src="files/images/logo/Jenkins.svg" width="25"/></a><a name="Сборка"></a>Сборка в [Jenkins](https://jenkins.autotests.cloud/job/HW14-VkusVill/)</a>
 ____
 <p align="center">  
 <a href="https://jenkins.autotests.cloud/job/HW14-VkusVill/"><img src="files/images/screen/vkusvill_jenkins_build.png" alt="Jenkins" width="950"/></a>  
@@ -89,7 +89,7 @@ vkusvill
 ```
 ___
 <a id="allure"></a>
-## <img alt="Allure" height="25" src="images/logo/Allure.svg" width="25"/></a> <a name="Allure"></a>Allure [отчет](https://jenkins.autotests.cloud/job/FrigestyMigstroyProject/7/allure/)</a>
+## <img alt="Allure" height="25" src="files/images/logo/Allure.svg" width="25"/></a> <a name="Allure"></a>Allure [отчет](https://jenkins.autotests.cloud/job/FrigestyMigstroyProject/7/allure/)</a>
 ___
 
 ### *Основная страница отчёта*
@@ -113,7 +113,7 @@ ___
 
 ___
 <a id="allure-testops"></a>
-## <img alt="Allure" height="25" src="images/logo/Allure2.svg" width="25"/></a>Интеграция с <a target="_blank" href="https://allure.autotests.cloud/project/4578/dashboards">Allure TestOps</a>
+## <img alt="Allure" height="25" src="files/images/logo/Allure2.svg" width="25"/></a>Интеграция с <a target="_blank" href="https://allure.autotests.cloud/project/4578/dashboards">Allure TestOps</a>
 ____
 
 ### *Авто тест-кейсы*
@@ -124,7 +124,7 @@ ____
 
 ____
 <a id="telegram"></a>
-## <img alt="Allure" height="25" src="images/logo/Telegram.svg" width="25"/></a> Уведомление в Telegram при помощи бота
+## <img alt="Allure" height="25" src="files/images/logo/Telegram.svg" width="25"/></a> Уведомление в Telegram при помощи бота
 ____
 <p align="center">  
 <img title="Allure Overview Dashboard" src="files/images/screen/Telegram.png" width="550">  
@@ -132,7 +132,7 @@ ____
 
 ____
 <a id="video"></a>
-## <img alt="Selenoid" height="25" src="images/logo/Selenoid.svg" width="25"/></a> Примеры видео выполнения тестов на Selenoid
+## <img alt="Selenoid" height="25" src="files/images/logo/Selenoid.svg" width="25"/></a> Примеры видео выполнения тестов на Selenoid
 ____
 <p align="center">
 <img title="Selenoid Video" src="files/images/video/ExampleOfPassingTest.gif" width="550" height="350"  alt="video">   
