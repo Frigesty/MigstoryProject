@@ -30,12 +30,12 @@ public class TestBase {
         if(webDriverConfig.isRemote()){
             Configuration.remote = webDriverConfig.remoteUrl();
 
-//            DesiredCapabilities capabilities = new DesiredCapabilities();
-//            capabilities.setCapability("selenoid:options", Map.<String, Object>of(
-//                    "enableVNC", true,
-//                    "enableVideo", true
-//            ));
-//            Configuration.browserCapabilities = capabilities;
+            DesiredCapabilities capabilities = new DesiredCapabilities();
+            capabilities.setCapability("selenoid:options", Map.<String, Object>of(
+                    "enableVNC", true,
+                    "enableVideo", true
+            ));
+            Configuration.browserCapabilities = capabilities;
 
         }
     }
