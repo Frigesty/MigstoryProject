@@ -22,6 +22,8 @@ public class TestBase {
     static void setUpBrowserConfiguration() {
 
         Configuration.browser = webDriverConfig.browser();
+
+        Configuration.remote = "https://user1:1234@" + System.getProperty("remoteUrl") + "wd/hub";
         Configuration.browserVersion = webDriverConfig.browserVersion();
         Configuration.browserSize = webDriverConfig.browserSize();
         Configuration.pageLoadStrategy = webDriverConfig.loadStrategy();
