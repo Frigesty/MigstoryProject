@@ -53,4 +53,5 @@ task simple_test(type: Test) {
     useJUnitPlatform{
         includeTags("simple")
     }
+    systemProperty("env", System.getProperty("env", "local"))
 }

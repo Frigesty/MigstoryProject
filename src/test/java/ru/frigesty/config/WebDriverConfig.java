@@ -2,11 +2,14 @@ package ru.frigesty.config;
 
 import org.aeonbits.owner.Config;
 
+
 @Config.Sources({
         "classpath:properties/${env}.properties",
+
 })
 
 public interface WebDriverConfig extends Config {
+
     @Key("browser")
     @DefaultValue("CHROME")
     String browser();
@@ -16,7 +19,7 @@ public interface WebDriverConfig extends Config {
     String browserSize();
 
     @Key("browser_version")
-    @DefaultValue("126.0")
+    @DefaultValue("132.0")
     String browserVersion();
 
     @Key("baseUrl")
@@ -25,9 +28,15 @@ public interface WebDriverConfig extends Config {
 
     @Key("isRemote")
     @DefaultValue("false")
-    Boolean isRemote();
+    boolean isRemote();
 
     @Key("remoteUrl")
     @DefaultValue("http://localhost:4444")
     String remoteUrl();
+
+    @Key("loadStrategy")
+    @DefaultValue("eager")
+    String loadStrategy();
+
+
 }
