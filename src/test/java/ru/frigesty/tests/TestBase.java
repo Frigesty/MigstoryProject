@@ -45,7 +45,14 @@ public class TestBase {
                     "enableVideo", true
             ));
             Configuration.browserCapabilities = capabilities;
-
+            System.out.println("Loaded properties:");
+            System.out.println("browser: " + webDriverConfig.browser());
+            System.out.println("browser_version: " + webDriverConfig.browserVersion());
+            System.out.println("browser_size: " + webDriverConfig.browserSize());
+            System.out.println("baseUrl: " + webDriverConfig.baseUrl());
+            System.out.println("isRemote: " + webDriverConfig.isRemote());
+            System.out.println("loadStrategy: " + webDriverConfig.loadStrategy());
+            System.out.println("remoteUrl: " + webDriverConfig.remoteUrl());
         }
     }
 
