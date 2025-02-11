@@ -28,7 +28,7 @@ public interface WebDriverConfig extends Config {
 
     @Key("isRemote")
     @DefaultValue("false")
-    Boolean isRemote();
+    boolean isRemote();
 
     @Key("remoteUrl")
     @DefaultValue("https://user1:1234@selenoid.autotests.cloud/wd/hub")

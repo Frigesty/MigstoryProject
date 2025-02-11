@@ -56,8 +56,8 @@ task simple_test(type: Test) {
     systemProperty("env", System.getProperty("env", "local"))
 }
 
-task simple_test_remote(type: Test) {
-    useJUnitPlatform{
+tasks.register('simple_test_remote', Test) {
+    useJUnitPlatform {
         includeTags("simple")
     }
     systemProperty("env", System.getProperty("env", "remote"))
