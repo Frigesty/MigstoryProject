@@ -68,24 +68,22 @@ ____
 
 
 <a id="console"></a>
-## Команды для запуска из терминала
+## Запуск тестов
 ___
 ***Локальный запуск:***
 ```bash  
-gradle clean vkusvill_test
+Непосредственно через интерфейс IDEA
+```
+```bash  
+gradle clean simple_test
 ```
 ```bash  
 gradle clean test
 ```
 
-***Удалённый запуск через Jenkins:***
-```bash  
-clean 
-vkusvill 
-"-Dbrowser=${BROWSER}" 
-"-DbrowserSize=${SIZE}" 
-"-DbrowserVersion=${VERSION}" 
-"-DremoteUrl=${REMOTEURL}"
+***Запуск через Jenkins:***
+```bash
+Непосредственно через интерфейс Jenkins выбрав параметры запуска
 ```
 ___
 <a id="allure"></a>
