@@ -113,13 +113,13 @@ ___
 
 ___
 <a id="allure-testops"></a>
-## <img alt="Allure" height="25" src="files/images/logo/Allure2.svg" width="25"/></a>Интеграция с <a target="_blank" href="https://allure.autotests.cloud/project/4578/dashboards">Allure TestOps</a>
+## <img alt="Allure" height="25" src="files/images/logo/Allure2.svg" width="25"/></a>Интеграция с <a target="_blank" href="https://allure.autotests.cloud/launch/44611/tree/692679?treeId=0">Allure TestOps</a>
 ____
 
 ### *Авто тест-кейсы*
 
 <p align="center">  
-<img title="Allure TestOps Tests" src="files/images/screen/vkusvill_allure_autotestsN.png" width="850">  
+<img title="Allure TestOps Tests" src="files/images/screen/Testops.png" width="850">  
 </p>
 
 ____
