@@ -12,7 +12,7 @@ ____
 
 * <a href="#jenkins">Сборка в Jenkins</a>
 
-* <a href="#console">Запуск из терминала</a>
+* <a href="#console">Запуск тестов</a>
 
 * <a href="#allure">Allure отчет</a>
 
