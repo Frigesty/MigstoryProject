@@ -83,10 +83,13 @@ public class MainPageTests extends TestBase {
 
         mainPage.openPage().verifySliderText(slideTexts[0]);
 
-        for (String slideText : slideTexts) {
+        for (int i = 1; i < slideTexts.length; i++) {
+            if (i == slideTexts.length - 1) {
+                mainPage.sleepOneSecond();
+            }
             mainPage.hoverOnSlide()
                     .nextSliderClick()
-                    .verifySliderText(slideText);
+                    .verifySliderText(slideTexts[i]);
         }
     }
 }
