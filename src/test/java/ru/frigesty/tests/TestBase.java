@@ -12,31 +12,35 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import ru.frigesty.config.WebDriverConfig;
 import ru.frigesty.helpers.Attach;
 import java.util.Map;
+
 import static com.codeborne.selenide.Selenide.closeWebDriver;
 
 public class TestBase {
 
-    static WebDriverConfig webDriverConfig = ConfigFactory.create(WebDriverConfig.class, System.getProperties());
+    private static final WebDriverConfig webDriverConfig =
+            ConfigFactory.create(WebDriverConfig.class, System.getProperties());
 
     @BeforeAll
     static void setUpBrowserConfiguration() {
-
+        configureBrowser();
+        if (webDriverConfig.isRemote()) {
+            configureRemote();
+        }
+    }
+    private static void configureBrowser() {
         Configuration.browser = webDriverConfig.browser();
         Configuration.browserVersion = webDriverConfig.browserVersion();
         Configuration.browserSize = webDriverConfig.browserSize();
         Configuration.pageLoadStrategy = webDriverConfig.loadStrategy();
         Configuration.baseUrl = webDriverConfig.baseUrl();
-
-        if(webDriverConfig.isRemote()){
-            Configuration.remote = webDriverConfig.remoteUrl();
-
-            DesiredCapabilities capabilities = new DesiredCapabilities();
-            capabilities.setCapability("selenoid:options", Map.<String, Object>of(
-                    "enableVNC", true,
-                    "enableVideo", true
-            ));
-            Configuration.browserCapabilities = capabilities;
-        }
+    }
+    private static void configureRemote() {
+        Configuration.remote = webDriverConfig.remoteUrl();
+        Configuration.browserCapabilities = new DesiredCapabilities();
+        Configuration.browserCapabilities.setCapability("selenoid:options", Map.of(
+                "enableVNC", true,
+                "enableVideo", true
+        ));
     }
 
     @BeforeEach
@@ -48,11 +52,10 @@ public class TestBase {
     void addAttachments() {
         Attach.screenshotAs("Last screenshot");
         Attach.addVideo();
+        Attach.pageSource();
         if (!Configuration.browser.equalsIgnoreCase("firefox")) {
             Attach.browserConsoleLogs();
         }
-        Attach.pageSource();
-
     }
 
     @AfterAll
